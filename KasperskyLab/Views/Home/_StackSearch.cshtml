@@ -1,0 +1,42 @@
+﻿@model StackSearchModel
+<script src="~/Scripts/StackSearch/main.js"></script>
+<h2>@Html.DisplayNameFor(model => model)</h2>
+@using (Ajax.BeginForm("StackSearch", new AjaxOptions
+{
+	OnBegin = "StackSearchBegin",
+	OnFailure = "StackSearchFailure",
+	OnSuccess = "StackSearchSuccess"
+}))
+{
+	<div id="stack-search-result-form" class="row">
+		<div class=".col-sm-5 col-md-4 col-lg-2 col-xl-5">
+			<div class="form-group">
+				@Html.DisplayNameFor(model => model.Numbers)
+				@Html.TextBoxFor(model => model.Numbers, new { @class = "form-control" })
+				@Html.ValidationMessageFor(model => model.Numbers)
+			</div>
+		</div>
+		<div class=".col-sm-1 col-md-2 col-lg-1 col-xl-1">
+			<a title="Сгенерировать" class="glyphicon glyphicon-forward" id="generate-arr-button" data-toggle="modal" data-target="#genModal" style="margin-right:15px; margin-top:30px"></a>
+		</div>
+		<div class=".col-sm-5 col-md-4 col-lg-2 col-xl-5">
+			<div class="form-group">
+				@Html.DisplayNameFor(model => model.SearchSum)
+				@Html.TextBoxFor(model => model.SearchSum, new { @class = "form-control" })
+				@Html.ValidationMessageFor(model => model.SearchSum)
+			</div>
+		</div>
+		<div class=".col-sm-1 col-md-2 col-lg-1 col-xl-1">
+			<button type="submit" class="btn btn-success">Go</button>
+		</div>
+	</div>
+}
+<div>
+	<div class="row">
+		<div class=".col-sm-12 col-md-10 col-lg-5 col-xl-12">
+			<div id="stack-search-result-body">
+			</div>
+		</div>
+	</div>
+</div>
+

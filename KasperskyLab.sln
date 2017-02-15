@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KasperskyLab", "KasperskyLab\KasperskyLab.csproj", "{CF3847B7-D147-4D4E-AC46-839F59C88CAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KasperskyLabServices", "KasperskyLabService\KasperskyLabServices.csproj", "{17A3320D-4976-47EF-A70A-21E882AA7CF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KasperskyLabModels", "KasperskyLabModels\KasperskyLabModels.csproj", "{448EFF29-D9F0-45BE-A84B-081B43C780D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF3847B7-D147-4D4E-AC46-839F59C88CAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3847B7-D147-4D4E-AC46-839F59C88CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3847B7-D147-4D4E-AC46-839F59C88CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3847B7-D147-4D4E-AC46-839F59C88CAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A3320D-4976-47EF-A70A-21E882AA7CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A3320D-4976-47EF-A70A-21E882AA7CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A3320D-4976-47EF-A70A-21E882AA7CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A3320D-4976-47EF-A70A-21E882AA7CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{448EFF29-D9F0-45BE-A84B-081B43C780D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448EFF29-D9F0-45BE-A84B-081B43C780D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448EFF29-D9F0-45BE-A84B-081B43C780D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448EFF29-D9F0-45BE-A84B-081B43C780D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

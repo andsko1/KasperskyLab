@@ -1,0 +1,25 @@
+﻿@model StackSearchModel
+<div id="stack-search-results" class="panel panel-default">
+	<div class="panel-heading">
+		Результат
+	</div>
+	<div class="row">
+		<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+			<div class="panel-body">
+				@foreach (var item in Model.Numbers)
+				{
+					@item.ToString()<br />
+				}
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+			<div class="panel-body">
+				@foreach (var item in Model.Pairs)
+				{
+					@(item.Item1.ToString() + " - " + @item.Item2.ToString())<br />
+				}
+			</div>
+		</div>
+	</div>
+</div>
+

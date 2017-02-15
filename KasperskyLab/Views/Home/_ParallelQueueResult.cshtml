@@ -1,0 +1,14 @@
+﻿@using KasperskyLabModels
+@using KasperskyLab.Helpers 
+@model List<QueueStateModel>
+<div id="parallel-queue-results" class="panel panel-default">
+	<div class="panel-heading">
+		Результат
+	</div>
+	<div class="panel-body">
+		@foreach (var item in Model)
+		{
+			@item.Date @item.Action.GetDescription() @item.Element.ToString()<br />
+		}
+	</div>
+</div>
